@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Gyankosh</string>
+    <string name="name">Ashish Bhandari</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="notification_title">Notification Topic</string>
+    <string name="notification_description">Notification description...</string>
+    <string name="notification_date">2024/12/27</string>
+    <string name="notification_time">10:00 AM</string>
+    <string name="check_out_rules">Check out rules</string>
+    <string name="mcqRule1">1. Maximum of 50 multiple choice questions will be asked.</string>
+    <string name="mcqRule2">2. Questions are divided into three categories Easy, Medium and Hard.</string>
+    <string name="mcqRule3">3.Test starts with medium question. The next questions difficulty relies on the answer of current question. Correct answer increases difficulty whereas incorrect answer decreases difficulty if possible.</string>
+    <string name="mcqRule4">4. With every single question the standard error and users ability measure are calculated.</string>
+    <string name="mcqRule5">5. The test stops if no more easier or harder questions remains, ability measure has became precise enough, maximum number of questions has been attempted and time has ended(ie 45 minutes).</string>
+    <string name="mcqRule6">6. Answer once choosen can not be changed afterward.</string>
+    <string name="mcqRule7">7. At the end you will receive estimated ability level, total score and overall feedback on your performance.</string>
+    <string name="mcqRule8">8. Ensure you have a stable internet connection through out the test</string>
+    <string name="mcqRule9">9. Complete the test with your own knowledge. The system is designed to help you realize your knowledge or ability and improve it.</string>
+
+
+</resources>

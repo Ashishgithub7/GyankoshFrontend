@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Notes.Note"
+    android:id="@+id/main"
+    android:background="@color/secondary">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/subtopicView"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/secondary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/downloadBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_file_download_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/subTopic"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/subTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:fontFamily="@font/intermedium"
+        android:maxLines="1"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="19dp"
+        android:text="Subtopic"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/noteView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+
+        android:background="@color/background"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="50dp"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/pageCounter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="Page no 100"
+        android:textStyle="italic"/>
+</RelativeLayout>

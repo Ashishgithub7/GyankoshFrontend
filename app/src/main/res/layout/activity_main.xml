@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F8F7"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="214dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="144dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lexend"
+        android:text="Gyankosh"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <TextView
+        android:id="@+id/taglineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/lexend"
+        android:text="FOR COMPREHENSIVE LEARNING"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/taglineTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4DC9A7"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taglineTextView"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginButton"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#CAF8F5"
+        android:text="Create Account"
+        android:textColor="#4DC9A7"
+        android:textColorLink="#85F1EA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+<!--    <Button-->
+<!--        android:id="@+id/loginBypass"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="196dp"-->
+<!--        android:text="Login Bypass"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

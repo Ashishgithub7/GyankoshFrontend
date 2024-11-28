@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- res/drawable/rounded_shadow.xml -->
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Shadow Layer -->
+        <item>
+            <shape android:shape="rectangle">
+                <solid android:color="#00000000"/> <!-- Transparent background -->
+                <corners android:radius="500dp"/> <!-- Adjust radius as needed -->
+                <padding android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp"/>
+                <size android:width="10dp" android:height="100dp"/> <!-- Size of the shadow -->
+            </shape>
+        </item>
+
+        <!-- ImageButton Background Layer -->
+        <item android:top="2dp" android:left="2dp">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFFFFF"/> <!-- Background color of the ImageButton -->
+                <corners android:radius="500dp"/> <!-- Adjust radius as needed -->
+            </shape>
+        </item>
+    </layer-list>
+</selector>

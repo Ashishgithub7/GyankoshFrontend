@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MCQ.McqRules">
+
+ <TextView
+     android:id="@+id/head"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="24dp"
+     android:fontFamily="@font/inter"
+     android:text="ADAPTIVE MCQ RULES"
+     android:textColor="@color/third"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.0" />
+
+ <TextView
+     android:id="@+id/subHead"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/inter"
+     android:text="Please read the rules carefully before starting the test"
+     android:textColor="@color/disable_color"
+     android:textSize="12dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/head"
+     app:layout_constraintVertical_bias="0.0" />
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:id="@+id/constraintLayout2"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginTop="140dp"
+     android:paddingHorizontal="36dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.16000003">
+
+
+  <TextView
+      android:id="@+id/rule1"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/mcqRule1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule2"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule1"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule3"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule2"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule4"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule4"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule3"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule5"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule5"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule4"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule6"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule6"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule5"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule7"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule7"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule6"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule8"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule8"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule7"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/rule9"
+      style="@style/mcqRulesStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/mcqRule9"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule8"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <Button
+      android:id="@+id/startMcq"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:backgroundTint="@color/secondary"
+      android:fontFamily="@font/inter"
+      android:text="Start MCQ"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/rule9"
+      app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+ <ImageView
+     android:id="@+id/imageView"
+     android:layout_width="350dp"
+     android:layout_height="497dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/navContactUs"
+    android:title="Contact Us"
+    android:icon="@drawable/baseline_perm_phone_msg_24"/>
+
+    <item android:id="@+id/navHome"
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+        />
+
+    <item android:id="@+id/navProfile"
+        android:title="Profile"
+        android:icon="@drawable/user_regular"/>
+</menu>

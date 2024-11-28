@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Profile Image"
+            app:cardCornerRadius="50dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profilebw" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Test User"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="testinguser@hotmail.com"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/disable_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:background="#E6F5F4"
+        android:paddingHorizontal="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <!-- Profile Picture -->
+
+            <!-- Options List -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <!-- Dashboard Option -->
+                <LinearLayout
+
+                    android:id="@+id/dashboard"
+                    style="@style/profileOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="-3dp"
+                        android:paddingStart="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/dashboard" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Dashboard"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Statistics Option -->
+                <LinearLayout
+                    android:id="@+id/statistics"
+                    style="@style/profileOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/chart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Statistics"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Contacts Option -->
+
+                <!-- Calendar Option -->
+                <LinearLayout
+                    android:id="@+id/contacts"
+                    style="@style/profileOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/contact" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Contacts"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/calendar"
+                    style="@style/profileOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Calendar"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Notification Option -->
+                <LinearLayout
+                    android:id="@+id/notification"
+                    style="@style/profileOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/bellg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Notification"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Log out and Delete Account -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Log out"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delete_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Delete account"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

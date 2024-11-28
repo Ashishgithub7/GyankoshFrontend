@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="10dp"
+    android:background="@color/background">
+
+<!--    <TextView-->
+<!--        android:id="@+id/qid"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/intermedium"-->
+<!--        android:text="100"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/questionView"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"/>-->
+
+    <TextView
+        android:id="@+id/questionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/intermedium"
+        android:text="Your Question for Model Test goes here?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionA"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option A"
+        android:textColor="@color/disable_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionView"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:rippleColor="@color/primary"
+        app:strokeColor="@color/disable_color"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionB"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option B"
+        android:textColor="@color/disable_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionA"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/disable_color"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionC"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option C"
+        android:textColor="@color/disable_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionB"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/disable_color"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionD"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option D"
+        android:textColor="@color/disable_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionC"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/disable_color"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

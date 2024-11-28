@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a3529"
+    tools:context=".MCQ.McqMain">
+
+<!--    <TextView-->
+<!--        android:id="@+id/timer"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:fontFamily="@font/time2"-->
+<!--        android:text="45:00"-->
+<!--        android:textColor="@color/secondary"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/cardView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/questionNumber"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="658dp"
+        android:layout_height="691dp"
+        android:alpha="0.15"
+        android:src="@drawable/rules_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lexend"
+        android:text="Question 1/50"
+        android:textColor="@color/secondary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/secondary"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.05"
+        android:text="The original Question of the Adaptive MCQ goes here and has a question mark at last?"
+        android:textColor="@color/background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionA"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option A"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintVertical_bias="0.3"
+        app:strokeColor="@color/background"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionB"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option B"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionA"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/background"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionC"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option C"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionB"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/background"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/optionD"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="Option D"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionC"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/background"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/primary"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/feedbackCard"
+        style="@style/Widget.Material3.CardView.Outlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/transparent"
+        android:padding="16dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionD"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/disable_color"
+        app:strokeWidth="2dp"
+        tools:layout_editor_absoluteX="45dp">
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/intermedium"
+            android:letterSpacing="0.05"
+            android:text="The feedback after answer goes here."
+            android:textColor="@color/background"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/third"
+        android:fontFamily="@font/intermedium"
+        android:letterSpacing="0.08"
+        android:text="NEXT"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionD"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Practice"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="Video.VideoMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Model_Test.ModelTestFirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Model_Test.ModelTestResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Model_Test.ModelTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Model_Test.ModelSetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.Note"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.NotesMain"
+            android:exported="false" />
+        <activity
+            android:name=".MCQ.QuizFinished"
+            android:exported="false" />
+        <activity
+            android:name=".MCQ.McqMain"
+            android:exported="false" />
+        <activity
+            android:name=".MCQ.McqRules"
+            android:exported="false" />
+        <activity
+            android:name=".MCQ.McqFirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMain"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".MainActivity2" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_main2" -->
+        <!-- android:theme="@style/Theme.Practice" /> -->
+        <!-- <activity -->
+        <!-- android:name=".login" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_login" /> -->
+        <activity
+            android:name=".navigation"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".loksewa" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Profile"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".home" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

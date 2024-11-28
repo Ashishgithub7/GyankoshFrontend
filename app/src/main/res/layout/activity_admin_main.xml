@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMain"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_corner_bottom_only"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Admin Panel"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/uploadLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           android:paddingTop="16dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.0">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="UPLOAD"
+               android:fontFamily="@font/inter"
+               android:textColor="@color/third"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0" />
+
+           <LinearLayout
+               android:id="@+id/noteUpload"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="40dp"
+               android:orientation="vertical"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#fb8500"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/notes" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Note"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/notificationUpload"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40dp"
+               android:layout_marginEnd="16dp"
+               android:orientation="vertical"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#4f5d75"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/bell_regular" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Notification"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/mcqQuestionUpload"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/noteUpload">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#f07167"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/question" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="MCQ Question"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/modelSetUpload"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+
+               android:layout_marginEnd="16dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/notificationUpload">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#219ebc"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/model_set" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Model Set"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/liveExamUpload"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/mcqQuestionUpload">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#81b29a"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/live_exam_icon" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Live Exam"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/editLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="24dp"
+           app:layout_constraintBottom_toTopOf="@+id/deleteLayout"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/uploadLayout"
+           app:layout_constraintVertical_bias="1.0">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="EDIT"
+               android:fontFamily="@font/inter"
+               android:textColor="@color/third"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0" />
+
+           <LinearLayout
+               android:id="@+id/noteEdit"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="40dp"
+               android:orientation="vertical"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#fb8500"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/notes" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Note"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/notificationEdit"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="40dp"
+               android:layout_marginEnd="16dp"
+               android:orientation="vertical"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#4f5d75"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/bell_regular" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Notification"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/mcqQuestionEdit"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/noteEdit">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#f07167"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/question" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="MCQ Question"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/modelSetEdit"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+
+               android:layout_marginEnd="16dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/notificationEdit">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#219ebc"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/model_set" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Model Set"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/liveExamEdit"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/mcqQuestionEdit">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#81b29a"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/live_exam_icon" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Live Exam"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/deleteLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingTop="24dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editLayout"
+           app:layout_constraintVertical_bias="0.0">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="DELETE"
+               android:fontFamily="@font/inter"
+               android:textColor="@color/third"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0" />
+
+           <LinearLayout
+               android:id="@+id/noteDelete"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="40dp"
+               android:orientation="vertical"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#fb8500"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/notes" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Note"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/notificationDelete"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="35dp"
+               android:layout_marginEnd="24dp"
+               android:orientation="vertical"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#4f5d75"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/bell_regular" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Notification"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/mcqQuestionDelete"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/noteDelete">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#f07167"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/question" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="MCQ Question"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/modelSetDelete"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               android:layout_marginEnd="16dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/notificationDelete">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#219ebc"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/model_set" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Model Set"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/liveExamDelete"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:orientation="vertical"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/mcqQuestionDelete">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   app:cardBackgroundColor="#81b29a"
+                   app:cardCornerRadius="50dp"
+                   tools:layout_editor_absoluteX="28dp"
+                   tools:layout_editor_absoluteY="25dp">
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/live_exam_icon" />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/inter"
+                   android:text="Live Exam"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment"
+    android:background="#FFFFFF"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Notifications Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/inter"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:text="Notifications"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Tabs for All and Unread -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <!-- Section Header: RECENTLY -->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="16dp"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            android:text="RECENTLY"-->
+<!--            android:textColor="@color/disable_color"-->
+<!--            android:textSize="14sp" />-->
+
+        <!-- RecyclerView for Notification Items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"/>
+
+        <!-- Section Header: OLDER -->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="OLDER"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textColor="@color/disable_color"-->
+        <!--            android:paddingTop="16dp"-->
+        <!--            android:paddingBottom="8dp"/>-->
+
+        <!--        &lt;!&ndash; RecyclerView for Notification Items &ndash;&gt;-->
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/recycler_older"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:overScrollMode="never"/>-->
+    </LinearLayout>
+
+
+</FrameLayout>

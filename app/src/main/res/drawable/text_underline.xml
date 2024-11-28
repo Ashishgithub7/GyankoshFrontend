@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <size android:height="2dp"/> <!-- Thickness of the underline -->
+        <solid android:color="@color/transparent"/>
+        <stroke  android:width="2dp" android:color="@color/third"/> <!-- Color of the underline -->
+        <padding android:top="-5dp"
+            android:left="-2dp"
+            android:right="-2dp"
+            android:bottom="0dp"/> <!-- Gap between text and underline -->
+
+</shape>
