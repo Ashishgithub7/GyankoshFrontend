@@ -7,8 +7,7 @@ This is a frontend of an andriod app called gyanKosh. It was built for helping s
 This project uses XML for layout and Java for logic.
 
 ## Some snaps of the app are:
-![1740538973453](https://github.com/user-attachments/assets/40316bce-43fa-4f55-9773-8c6ed305e190)
-![1740538973436](https://github.com/user-attachments/assets/80c3e894-709e-4c78-a9bb-508c99900ed1)
+![1740538973453](https://github.com/user-attachments/assets/40316bce-43fa-4f55-9773-8c6ed305e190) ![1740538973436](https://github.com/user-attachments/assets/80c3e894-709e-4c78-a9bb-508c99900ed1)
 ![1740538973422](https://github.com/user-attachments/assets/e2c8d8b3-6122-45c6-9ffb-991d4b97e0f4)
 ![1740538973407](https://github.com/user-attachments/assets/6a926c5d-397c-4830-8fb6-6bf4cbebb3a5)
 ![1740538973393](https://github.com/user-attachments/assets/9284bc52-c832-41ff-8629-32561824469f)
